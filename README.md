@@ -60,7 +60,7 @@ Use the `angr.exploration_techniques.Symbion` exploration technique when you wan
 Before running your `angr` script, start the `zelos` `zdbserver` on the target binary:
 
 ```bash
-(zelos) $ python -m zelos.zdbserver FILENAME
+(zelos) $ python -m zelos.tools.zdbserver FILENAME
 ```
 
 The `zdbserver` and `angr` scripts can run on the same system, but be sure to run them in separate python environments, as both packages use different versions of the `unicorn` CPU emulator.
