@@ -1,5 +1,5 @@
-![PyPI](https://img.shields.io/pypi/v/zelos_angr)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/zelos_angr)
+![PyPI](https://img.shields.io/pypi/v/angr-zelos-target)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/angr-zelos-target)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 <a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a>
 
