@@ -16,13 +16,13 @@ BINARY_END = 0x0065310D
 def main():
     # Create project with zelos `concrete_target`
     print(f">> tutorial script: {os.path.realpath(__file__)}")
+    filename = os.path.join(
+        os.path.dirname(os.path.realpath(__file__)), "not_packed_elf64"
+    )
     try:
         zelos_target = ZelosConcreteTarget()
     except ConnectionRefusedError as e:
         print(e)
-        filename = os.path.join(
-            os.path.dirname(os.path.realpath(__file__)), "not_packed_elf64"
-        )
         print(
             "Ensure the zdbserver is running in the zelos environment, e.g.:\n"
             + f"    (zelos) $ python -m zelos.zdbserver {filename}"
