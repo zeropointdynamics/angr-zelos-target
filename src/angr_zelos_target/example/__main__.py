@@ -35,7 +35,7 @@ def main():
     )
     entry_state = project.factory.entry_state()
     simgr = project.factory.simgr(entry_state)
-    print(f"[0] Created angr_zelos project for {filename}")
+    print(f"[0] Created angr_zelos project for {zelos_target.filepath}")
 
     # Reach the first decision point
     simgr.use_technique(Symbion(find=[CONFIG_DECISION]))
