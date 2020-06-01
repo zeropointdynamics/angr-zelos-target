@@ -8,22 +8,14 @@ Provides support for using [*zelos*](https://github.com/zeropointdynamics/zelos)
 
 # Installation
 
-You first need `angr` with `symbion`. Their documentation recommends installation in a separate virtual environment, as several python packages are customized, including `unicorn`. This is the boilerplate to setup angr in a new virtual environment (**). Refer to their documentation for more comprehensive instructions.
+You first need `angr` with `symbion`. Their documentation recommends installation in a separate virtual environment, as several python packages are customized, including `unicorn`. This is the boilerplate to setup angr in a new virtual environment. Refer to their documentation for more comprehensive instructions.
 
 ```bash
-$ sudo apt-get install python3-dev libffi-dev build-essential cmake gdb-multiarch
+$ sudo apt-get install python3-dev libffi-dev build-essential cmake gdb-multiarch python3-venv
 $ git clone https://github.com/angr/angr-targets.git
 
 $ python3 -m venv ~/.venv/angr && source ~/.venv/angr/bin/activate
 (angr) $ pip install wheel && pip install angr && pip install -e angr-targets
-```
-
-(**) As of this writing, the `pip` release of `symbion` is not working. Instead, use the development version, which already includes `angr-targets`:
-
-```bash
-$ git clone https://github.com/angr/angr-dev.git
-$ cd angr-dev && ./setup.sh -i -e angr
-$ source ~/.virtualenvs/angr/bin/activate
 ```
 
 Once you have the `angr` environment setup, install the `angr-zelos-target` package within the environment to enable `zelos` as a concrete target:
